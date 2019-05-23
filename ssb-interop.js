@@ -419,7 +419,7 @@ document.addEventListener("DOMContentLoaded", function() {
         .c-mrkdwn__mention:hover,
         .c-mrkdwn__user_group--mention,
         .c-mrkdwn__user_group--mention:hover {
-            color: black !important
+            color: black !important;
         }
         #threads_msgs .inline_message_input_container.with_file_upload {
             border: 2px solid #545454!important;
@@ -986,7 +986,7 @@ document.addEventListener("DOMContentLoaded", function() {
             opacity:1 !important;
         }
         .c-timestamp__label{
-            color: #ffb088 !important;
+            color: #737373 !important;
         }
         .c-message__sender{
             color:#a4d677 !important
@@ -1167,7 +1167,7 @@ document.addEventListener("DOMContentLoaded", function() {
             color:#ff3636 !important;
         }
         .c-mrkdwn__code{
-            color: #ffa600 !important;
+            color: #ff6a00 !important;
         }
         a.c-link{
             color: #1eff00 !important;
@@ -1192,6 +1192,10 @@ document.addEventListener("DOMContentLoaded", function() {
         [data-view-context="threads-flexpane"] > .ql-placeholder,
         #search_terms > .ql-placeholder{
             padding: 0px 0px 5px 3px !important;
+        }
+        .c-mrkdwn__broadcast--mention,
+        .c-member_slug--mention{
+            background: #00ccff !important;
         }
     `;
 
