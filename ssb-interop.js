@@ -39,15 +39,15 @@ if (window.location.href !== "about:blank") {
     const { ipcRenderer, remote } = require("electron");
 
     ipcRenderer.on(
-        "SLACK_NOTIFY_CHILD_WINDOW_EVENT",
-        (event, method, ...args) => {
-            try {
-                if (!TSSSB || !TSSSB[method])
-                    throw new Error("Webapp is not fully loaded to execute method");
-                if (!allowedChildWindowEventMethod.includes(method)) {
-                    throw new Error("Unsupported method");
-                }
-            TSSSB[method](...args);
+    "SLACK_NOTIFY_CHILD_WINDOW_EVENT",
+    (event, method, ...args) => {
+        try {
+            if (!TSSSB || !TSSSB[method])
+                throw new Error("Webapp is not fully loaded to execute method");
+            if (!allowedChildWindowEventMethod.includes(method)) {
+                throw new Error("Unsupported method");
+            }
+        TSSSB[method](...args);
         } catch (error) {
             console.error(`Cannot execute method`, { error, method }); //tslint:disable-line:no-console
         }
@@ -1196,6 +1196,10 @@ document.addEventListener("DOMContentLoaded", function() {
         .c-mrkdwn__broadcast--mention,
         .c-member_slug--mention{
             background: #00ccff !important;
+        }
+        .p-channel_sidebar__channel--muted:not(.p-channel_sidebar__channel--selected) > span,
+        .p-channel_sidebar__name--away{
+            color: #4c4c4c;
         }
     `;
 
