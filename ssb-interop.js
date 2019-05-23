@@ -279,7 +279,7 @@ document.addEventListener("DOMContentLoaded", function() {
             border: 2px solid #008952 !important;
             color: white !important;
         }
-        #primary_file_button:hover {
+        #primary_file_button:hover{
             border: 2px solid #ff00f0 !important;
             background: #ff00f0 !important;
         }
@@ -1071,10 +1071,10 @@ document.addEventListener("DOMContentLoaded", function() {
             color: #949494 !important;
         }
         .msg_input_btn {
-            background-color: #008952 !important;
+            background-color: #00CCFF !important;
         }
         .p-threads_footer__input--legacy .p-message_input_file_button{
-            background-color: #008952 !important;
+            background-color: #00CCFF !important;
             color: white;
         }
         .sli_briefing{
@@ -1186,11 +1186,13 @@ document.addEventListener("DOMContentLoaded", function() {
         .ql-placeholder{
             padding: 7px 0px 0px 15px !important;
         }
-        [data-view-context="threads-flexpane"]{
+        [data-view-context="threads-flexpane"],
+        #p_thread_view_container [data-qa="message_input"]{
             padding: 0px 0px 5px 30px !important;
         }
         [data-view-context="threads-flexpane"] > .ql-placeholder,
-        #search_terms > .ql-placeholder{
+        #search_terms > .ql-placeholder,
+        #p_thread_view_container .ql-placeholder{
             padding: 0px 0px 5px 3px !important;
         }
         .c-mrkdwn__broadcast--mention,
