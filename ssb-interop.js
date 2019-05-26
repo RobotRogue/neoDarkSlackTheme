@@ -820,7 +820,9 @@ document.addEventListener("DOMContentLoaded", function() {
         .c-deprecated_rounded_button:visited {
             color: white !important;
         }
-        .p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(.p-channel_sidebar__channel--selected) .p-channel_sidebar__name, .p-channel_sidebar__link--unread .p-channel_sidebar__name, .p-channel_sidebar__link--invites:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name {
+        .p-channel_sidebar__channel--unread:not(.p-channel_sidebar__channel--muted):not(.p-channel_sidebar__channel--selected) .p-channel_sidebar__name,
+        .p-channel_sidebar__link--unread .p-channel_sidebar__name,
+        .p-channel_sidebar__link--invites:not(.p-channel_sidebar__link--dim) .p-channel_sidebar__name {
             color: #ff5656 !important;
             height: 20px;
             overflow: hidden;
@@ -841,13 +843,16 @@ document.addEventListener("DOMContentLoaded", function() {
         .c-date_picker_calendar__date {
             background: white;
         }
-        .c-calendar_view_header__stepper_btn, .c-calendar_view_header__title_btn i {
+        .c-calendar_view_header__stepper_btn,
+        .c-calendar_view_header__title_btn i {
             color: white !important;
         }
-        .c-calendar_view_header__stepper_btn:hover, .c-calendar_view_header__title_btn:hover {
+        .c-calendar_view_header__stepper_btn:hover,
+        .c-calendar_view_header__title_btn:hover {
             background-color: #565656 !important;
         }
-        .c-date_picker_calendar__date.c-date_picker_calendar__date--is_active:focus:not(.c-date_picker_calendar__date--is_selected), .c-date_picker_calendar__date:not(.c-date_picker_calendar__date--disabled):not(.c-date_picker_calendar__date--is_selected):hover {
+        .c-date_picker_calendar__date.c-date_picker_calendar__date--is_active:focus:not(.c-date_picker_calendar__date--is_selected)
+        .c-date_picker_calendar__date:not(.c-date_picker_calendar__date--disabled):not(.c-date_picker_calendar__date--is_selected):hover {
             background-color: rgb(255, 110, 39) !important;
             color: white !important;
         }
@@ -855,13 +860,15 @@ document.addEventListener("DOMContentLoaded", function() {
             background-color: #0576b9 !important;
             color: #ffffff;
         }
-        .p-block_kit_date_picker_calendar_wrapper .c-date_picker_calendar__date--disabled, .p-block_kit_date_picker_calendar_wrapper .c-mini_calendar__month_button:disabled {
+        .p-block_kit_date_picker_calendar_wrapper .c-date_picker_calendar__date--disabled,
+        .p-block_kit_date_picker_calendar_wrapper .c-mini_calendar__month_button:disabled {
             background: #ffffff;
         }
         #team_tab #member_preview_scroller .feature_custom_status_expiry.member_details .member_name {
             color: white !important;
         }
-        #member_preview_scroller a:not(.member_name):not(.current_status_preset_option):not(.member_details_manage_link):not(.current_status_presets_edit_link), .team_list_item a:not(.member_name):not(.current_status_preset_option):not(.member_details_manage_link):not(.current_status_presets_edit_link) {
+        #member_preview_scroller a:not(.member_name):not(.current_status_preset_option):not(.member_details_manage_link):not(.current_status_presets_edit_link),
+        .team_list_item a:not(.member_name):not(.current_status_preset_option):not(.member_details_manage_link):not(.current_status_presets_edit_link) {
             color: white !important;
         }
         #team_tab #member_preview_scroller .feature_custom_status_expiry.member_details .member_action_bar .c-button:not(:first-child) {
@@ -889,7 +896,8 @@ document.addEventListener("DOMContentLoaded", function() {
         #primary_file_button .ts_icon {
             bottom: -5px;
         }
-        #flex_contents .flexpane_tab_toolbar #search #team_filter .member_filter, #flex_contents .flexpane_tab_toolbar #search #user_group_filter .member_filter {
+        #flex_contents .flexpane_tab_toolbar #search #team_filter .member_filter,
+        #flex_contents .flexpane_tab_toolbar #search #user_group_filter .member_filter {
             background: transparent;
         }
         .c-message_list__day_divider__label__pill {
@@ -901,19 +909,36 @@ document.addEventListener("DOMContentLoaded", function() {
             border-top-color: #363636;
             top: 13px;
         }
-        #client-ui #team_list .team_list_item, #member_preview_scroller .team_list_item {
+        #client-ui #team_list .team_list_item,
+        #member_preview_scroller .team_list_item {
             border-bottom: 1px solid #545454 !important;
         }
-        #client-ui #team_list .team_list_item:hover, #member_preview_scroller .team_list_item:hover {
+        #client-ui #team_list .team_list_item:hover,
+        #member_preview_scroller .team_list_item:hover {
             background: #2d2d2d !important;
         }
-        input[type=text]:focus, input[type=password]:focus, input[type=datetime]:focus, input[type=datetime-local]:focus, input[type=date]:focus, input[type=month]:focus, input[type=time]:focus, input[type=week]:focus, input[type=number]:focus, input[type=email]:focus, input[type='url']:focus, input[type=tel]:focus, input[type=color]:focus, input[type=search]:focus {
+        input[type=text]:focus,
+        input[type=password]:focus,
+        input[type=datetime]:focus,
+        input[type=datetime-local]:focus,
+        input[type=date]:focus,
+        input[type=month]:focus,
+        input[type=time]:focus,
+        input[type=week]:focus,
+        input[type=number]:focus,
+        input[type=email]:focus,
+        input[type='url']:focus,
+        input[type=tel]:focus,
+        input[type=color]:focus
+        input[type=search]:focus {
             box-shadow: none !important;
         }
         .p-app_space_profile__info {
             background: #222;
         }
-        .supports_custom_scrollbar:not(.slim_scrollbar) #app_space_scroller_div, .supports_custom_scrollbar:not(.slim_scrollbar) #archive_msgs_scroller_div, .supports_custom_scrollbar:not(.slim_scrollbar) #msgs_scroller_div {
+        .supports_custom_scrollbar:not(.slim_scrollbar) #app_space_scroller_div,
+        .supports_custom_scrollbar:not(.slim_scrollbar) #archive_msgs_scroller_div,
+        .supports_custom_scrollbar:not(.slim_scrollbar) #msgs_scroller_div {
             border-right: 0px !important;
         }
         .c-message__editor__input_container {
@@ -925,19 +950,24 @@ document.addEventListener("DOMContentLoaded", function() {
             color: white;
             border-radius: 3px;
         }
-        .c-menu_item__header, .c-menu_item__header {
+        .c-menu_item__header,
+        .c-menu_item__header {
             color:white !important;
         }
-        #im_browser #im_list_container:not(.keyboard_active).not_scrolling .im_browser_row:not(.disabled_dm):hover, #im_browser .im_browser_row.highlighted {
+        #im_browser #im_list_container:not(.keyboard_active).not_scrolling .im_browser_row:not(.disabled_dm):hover,
+        #im_browser .im_browser_row.highlighted {
             background: black !important;
         }
         .c-calendar_view_header__stepper_btn {
             background: orange !important;
         }
-        .c-react_search_input .ts_icon_times_small:active, .c-react_search_input .ts_icon_times_small:focus, .c-react_search_input .ts_icon_times_small:hover {
+        .c-react_search_input .ts_icon_times_small:active,
+        .c-react_search_input .ts_icon_times_small:focus,
+        .c-react_search_input .ts_icon_times_small:hover {
             color: white !important;
         }
-        .unread_group .unread_group_header .unread_group_mark, .unread_group .unread_group_header .unread_keyboard {
+        .unread_group .unread_group_header .unread_group_mark,
+        .unread_group .unread_group_header .unread_keyboard {
             background: #339252 !important;
             color: white !important;
         }
@@ -985,7 +1015,10 @@ document.addEventListener("DOMContentLoaded", function() {
             transform: scale(1.11);
             color: white;
         }
-        #reply_container .inline_message_input_container .message_input div, #reply_container .inline_message_input_container textarea, .reply_input_container .inline_message_input_container .message_input div, .reply_input_container .inline_message_input_container textarea {
+        #reply_container .inline_message_input_container .message_input div,
+        #reply_container .inline_message_input_container textarea,
+        .reply_input_container .inline_message_input_container .message_input div,
+        .reply_input_container .inline_message_input_container textarea {
             colo:white !important;
             opacity:1 !important;
         }
@@ -999,7 +1032,9 @@ document.addEventListener("DOMContentLoaded", function() {
             background-color: #2ead5c;
             color: #ffffff;
         }
-        .btn_outline.hover, .btn_outline:focus, .btn_outline:hover {
+        .btn_outline.hover,
+        .btn_outline:focus,
+        .btn_outline:hover {
             background: black !important;
             color: #ffffff !important;
         }
@@ -1018,22 +1053,27 @@ document.addEventListener("DOMContentLoaded", function() {
         .feature_channel_browser_dropdown .show_which_channels_container .lfs_input_container .selected {
             color: #ffffff;
         }
-        .feature_channel_browser_dropdown .channel_browser_sort_container .lfs_input_container .selected, .feature_channel_browser_dropdown .show_which_channels_container .lfs_input_container .selected {
+        .feature_channel_browser_dropdown .channel_browser_sort_container .lfs_input_container .selected,
+        .feature_channel_browser_dropdown .show_which_channels_container .lfs_input_container .selected {
             color: #ffffff;
         }
         .menu ul li a:not(.inline_menu_link) {
             color: #e6e6e6 !important;
         }
-        .ql-container.texty_single_line_input.focus, .ql-container.texty_single_line_input:hover {
+        .ql-container.texty_single_line_input.focus,
+        .ql-container.texty_single_line_input:hover {
             box-shadow: none !important;
         }
-        .ql-container.texty_single_line_input.focus, .ql-container.texty_single_line_input:hover {
+        .ql-container.texty_single_line_input.focus,
+        .ql-container.texty_single_line_input:hover {
             color: #e6e6e6 !important;
         }
-        .c-message__reply_bar:hover, .c-message__reply_bar--focus {
+        .c-message__reply_bar:hover,
+        .c-message__reply_bar--focus {
             background-color: #484848;
         }
-        .c-message__reply_bar--focus .c-message__reply_bar_view_thread, .c-message__reply_bar:hover .c-message__reply_bar_view_thread {
+        .c-message__reply_bar--focus .c-message__reply_bar_view_thread,
+        .c-message__reply_bar:hover .c-message__reply_bar_view_thread {
             background-color: #484848 !important;
         }
         .c-dialog__cancel {
@@ -1042,7 +1082,10 @@ document.addEventListener("DOMContentLoaded", function() {
         .c-dialog__cancel:hover {
             background: transparent !important;
         }
-        .c-search_modal .popover > div, .c-search_modal .c-search__input_box, .c-search_modal:not(.c-search_modal--primarysearch) .popover > div, .c-search_modal:not(.c-search_modal--primarysearch) .c-search__input_box {
+        .c-search_modal .popover > div,
+        .c-search_modal .c-search__input_box,
+        .c-search_modal:not(.c-search_modal--primarysearch) .popover > div,
+        .c-search_modal:not(.c-search_modal--primarysearch) .c-search__input_box {
             background: #2b2c2e !important;
         }
         .c-card_carousel__text_section p {
@@ -1064,7 +1107,8 @@ document.addEventListener("DOMContentLoaded", function() {
         .p-file_upload_dialog__footer_cancel_all:hover {
             background: black !important;
         }
-        .p-threads_flexpane__header_permalink, .p-threads_flexpane__header_channel_name {
+        .p-threads_flexpane__header_permalink,
+        .p-threads_flexpane__header_channel_name {
             color: #36D4F6 !important;
         }
         .c-message .c-button--primary {
@@ -1132,7 +1176,8 @@ document.addEventListener("DOMContentLoaded", function() {
         .p-threads_view__default_background--first {
             background: #323232 !important;
         }
-        .p-threads_view__footer, .p-threads_view_root {
+        .p-threads_view__footer,
+        .p-threads_view_root {
             border: 1px solid #000;
         }
         .p-threads_view_reply {
@@ -1141,7 +1186,8 @@ document.addEventListener("DOMContentLoaded", function() {
         .p-threads_view__default_background {
             background: #323232;
         }
-        .p_threads_view_load_newer_button, .p_threads_view_load_older_button {
+        .p_threads_view_load_newer_button,
+        .p_threads_view_load_older_button {
             height: 32px;
             line-height: 32px;
             display: flex;
