@@ -1,5 +1,7 @@
 # neoDarkSlackTheme
 
+## NOTICE: This no longer works, since the rad folks at Slack added Dark Mode! <3
+
 ## About:
 Prefer not to have your retinas burned to a crsip when you open slack for work? 
 Well, with some simple modifications you can have a dark slack theme for the desktop client!
